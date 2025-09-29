@@ -1,5 +1,5 @@
 import "./globals.css";
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,5 +8,5 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  return redirect("https://www.htecsa.com", "push")
+  return permanentRedirect("https://www.htecsa.com", "push")
 }
